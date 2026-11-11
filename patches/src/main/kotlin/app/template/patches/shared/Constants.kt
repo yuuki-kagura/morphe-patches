@@ -83,4 +83,38 @@ object Constants {
             )
         )
     )
+
+    val COMPATIBILITY_BLACKSCREEN = Compatibility(
+        name = "Black Screen",
+        packageName = "io.japp.blackscreen",
+        apkFileType = ApkFileType.XAPK,
+        appIconColor = 0xFF000000,
+        targets = listOf(
+            AppTarget(
+                version = "2.0.7",
+                versionCodes = mapOf(SupportedAbi.ARM64_V8A to 97)
+            ),
+            AppTarget(
+                version = null,
+                isExperimental = true
+            )
+        )
+    )
+
+    val COMPATIBILITY_COLOR_TEMP_METER = Compatibility(
+        name = "White Balance Kelvin Meter",
+        packageName = "com.contechity.color_temp_meter",
+        apkFileType = ApkFileType.XAPK,
+        appIconColor = 0xFF202020,
+        targets = listOf(
+            AppTarget(
+                version = "3.15.0",
+                versionCodes = mapOf(SupportedAbi.ARM64_V8A to 127)
+            ),
+            AppTarget(
+                version = null,
+                isExperimental = true
+            )
+        )
+    )
 }
