@@ -28,7 +28,8 @@ val disablePairipLicenseCheckPatch = patch(
     name = "Disable PairIP license check",
     description = "Disables the PairIP installer signature verification that runs on " +
         "startup and otherwise blocks the app after it has been re-signed.",
-    default = true,
+    // Universal patch (no compatibleWith): must not be enabled by default.
+    default = false,
 ) {
     execute {
         CheckLicenseFingerprint.method.addInstructions(
