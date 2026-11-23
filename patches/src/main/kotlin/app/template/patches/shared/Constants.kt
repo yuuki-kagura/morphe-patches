@@ -88,7 +88,7 @@ object Constants {
         name = "Black Screen",
         packageName = "io.japp.blackscreen",
         apkFileType = ApkFileType.XAPK,
-        appIconColor = 0xFF000000,
+        appIconColor = 0x000000,
         targets = listOf(
             AppTarget(
                 version = "2.0.7",
@@ -105,7 +105,7 @@ object Constants {
         name = "White Balance Kelvin Meter",
         packageName = "com.contechity.color_temp_meter",
         apkFileType = ApkFileType.XAPK,
-        appIconColor = 0xFF202020,
+        appIconColor = 0x202020,
         targets = listOf(
             AppTarget(
                 version = "3.15.0",
